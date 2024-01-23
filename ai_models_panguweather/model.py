@@ -182,7 +182,7 @@ class PanguWeather(Model):
                 for step in (
                     list(range(1, 91))
                     + list(range(93, 147, 3))
-                    + list(range(144, 246, 6))
+                    + list(range(150, 246, 6))
                 ):
                     output, output_surface = run_inference(step)
                     save_results(output, output_surface)
