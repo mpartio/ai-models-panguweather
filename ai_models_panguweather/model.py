@@ -38,7 +38,7 @@ class PanguWeather(Model):
     )
 
     # Output
-    expver = "pguw"
+    expver = None
 
     def __init__(self, num_threads=1, **kwargs):
         super().__init__(**kwargs)
